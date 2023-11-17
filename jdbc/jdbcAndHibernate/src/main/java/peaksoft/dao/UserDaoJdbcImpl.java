@@ -91,16 +91,7 @@ public class UserDaoJdbcImpl implements UserDao {
         }
         return users;
     }
-//    public void cleanUsersTable() {
-//        String sql = "DELETE FROM \"user\"";
-//        try (Connection connection = Util.getConnection();
-//             Statement statement = connection.createStatement()) {
-//            statement.executeUpdate(sql);
-//            System.out.println("Table 'user' cleaned");
-//        } catch (SQLException e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
+
 
     public void cleanUsersTable() {
         String sql = "DELETE FROM \"user\" ";
